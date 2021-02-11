@@ -18,7 +18,7 @@
       client_id: '787236647439302658',
       client_secret: '3hfdUAXnSpjknnUi8nvjoxCaQ_zaDXtr',
       grant_type: 'identify',
-      redirect_uri: 'http://localhost:7700',
+      redirect_uri: 'https://mrmu8n3.github.io/le/',
       code: accessCode,
       scope: 'the scopes',
    };
@@ -47,7 +47,7 @@ fetch('https://discord.com/api/oauth2/token', {
 
 if (urlObj.pathname === '/') {
    responseCode = 200;
-   content = fs.readFileSync('./dashboard.html');
+   content = fs.readFileSync('./index.html');
 }
 
 res.writeHead(responseCode, {
